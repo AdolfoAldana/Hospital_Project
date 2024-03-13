@@ -1,14 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
-    <div>
-        <center><h1>Hola mundos pruba</h1></center>
-        <h2>HAOSDFJASKDJFKL;A</h2>
-    </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+#hola {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Navbar*/
+#Main-Navbar {
+    border-bottom: 1px solid #4f0222;
+    
+}
+
+/*Botones*/
+#button-sign-up {
+    background-color: #fb3973;
+    color: white;
+    border-radius: 10px;
+
+}
+
+/*
+#button-sign-up::hover{
+    background-color: #e9155f;
+    transition: ease 1s;
+}
+*/
+#button-log-in {
+    background-color: white;
+    color: #fb3973;
+    border-radius: 10px;
+    border: #fb3973 1px solid;
+}
+
+/*Tarjeta*/
+#Main-Card {
+    /*box-shadow: 0px 5px 10px 0px #8d0e45;*/
+    background-color: #ffcbd9;
+    color: white;
+    padding: 100px;
+    .title {
+        color: #e9155f;
+    }
+
+    .subtitle {
+        color: #4f0222;
+    }
+
+
+}
+</style>
+<body class="body">
+    <div id="Hola"> 
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="Main-Navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <h5>Hospital Las Bendiciones</h5>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item">
+                        <strong>Pacientes</strong>
+                    </a>
+
+                    <a class="navbar-item">
+                        <strong>Agendar Cita</strong>
+                    </a>
+                    <div class="buttons">
+
+                        <a class="button" id="button-log-in">
+                            <strong>Log in</strong>
+                        </a>
+                        <a class="button" id="button-sign-up">
+                            <strong>Sign up</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="card">
+            <div class="card-content" id="Main-Card">
+                <div id="Letters">
+                    <p class="title">
+                        “Buscamos tu salud y bienestar, porque la primera riqueza es la salud.”
+                    </p>
+                    <p class="subtitle">
+                        Somos tu mejor opcion para que te sientas mejor
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <scripts>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script>
+    </scripts>
 </body>
+</div>
 </html>
